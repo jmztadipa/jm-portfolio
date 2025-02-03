@@ -32,11 +32,11 @@ const skillItem = [
       effect: 'hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]'
     },
     {
-      imgSrc: 'jm-portfolio/images/sql-server.png',
+      imgSrc: '/jm-portfolio/images/sql-server.png',
       effect: 'hover:shadow-[0_20px_50px_rgba(27,_115,_186,_0.7)]'
     },
     {
-      imgSrc: 'jm-portfolio/images/php.png',
+      imgSrc: '/jm-portfolio/images/php.png',
       effect: 'hover:shadow-[0_20px_50px_rgba(27,_115,_186,_0.7)]'
     },
     {
