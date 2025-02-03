@@ -12,8 +12,7 @@ const Hero = () => {
 
         <div className='flex flex-col justify-center items-center text-center px-6 mt-10'>
             <motion.img
-                src="/images/avatar-1.gif" 
-                alt="Avatar"
+                src='/jm-portfolio/images/avatar.gif'
                 className="w-50 rounded-full" 
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
@@ -81,7 +80,7 @@ const Hero = () => {
 
             <motion.img
                 className="w-9 mb-10 mb-sm-0"
-                src="/images/mouse.gif"
+                src="/jm-portfolio/images/mouse.gif"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}>
