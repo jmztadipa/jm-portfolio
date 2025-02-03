@@ -29,6 +29,10 @@ body{
     @apply w-full h-full object-cover
 }
 
+.img-glow{
+    filter: drop-shadow(0 0 0.59rem #556e97);
+}
+
 .section{
     @apply pt-10 lg:pt-28 px-5
 }

@@ -35,7 +35,7 @@ const experiences = [
 
 const Timeline = () => {
   return (
-    <section id='work' className='section relative pb-13 lg:pb-35'>
+    <section id='work' className='section relative pb-5 lg:pb-35'>
         <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] bg-slate-800 -z-10"></div>
 
         <div className='container'>
@@ -45,7 +45,7 @@ const Timeline = () => {
                 initial={{opacity: 0, x: -100,}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{ duration: 0.5, delay: 0.2 }}>
-                Work Experiece
+                Work Experience
             </motion.p>
 
             <motion.ol 
@@ -54,7 +54,7 @@ const Timeline = () => {
                 whileInView={{opacity: 1}}
                 transition={{ duration: 0.5, delay: 0.2 }}>                  
                 {
-                    experiences.map(({position, date, exp}) => (
+                    experiences.map(({image, position, date, exp}) => (
                         <li class="mb-10 ms-7 lg:ms-10">
                             <motion.span 
                                 class="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-5 ring-slate-900 bg-slate-900"
@@ -65,24 +65,37 @@ const Timeline = () => {
                                     check
                                 </span>
                             </motion.span>
-                            <motion.h3 
-                                class="mb-[7px] text-lg font-semibold text-white"
-                                initial={{opacity: 0, y: -20}}
-                                whileInView={{opacity: 1, y: 0}}
-                                transition={{ duration: 0.8, delay: 0.2 }}>
-                                    {position}
-                            </motion.h3>
-                            <motion.time 
-                                class="block mb-7 text-sm font-normal leading-none text-gray-500"
-                                initial={{opacity: 0, y: -20}}
-                                whileInView={{opacity: 1, y: 0}}
-                                transition={{ duration: 0.7, delay: 0.4 }}>
-                                {date}
-                            </motion.time>
+
+                            <div className='flex items-center mb-5'>
+                                <motion.img 
+                                    className='w-12 h-11 mr-3'
+                                    initial={{opacity: 0, y: -20}}
+                                    whileInView={{opacity: 1, y: 0}}
+                                    transition={{ duration: 0.7, delay: 0.2 }}
+                                    src='/jm-portfolio/images/sbc_logo.png'
+                                />
+                                <div>
+                                    <motion.h3 
+                                        class="text-lg font-semibold text-white"
+                                        initial={{opacity: 0, x: 20}}
+                                        whileInView={{opacity: 1, x: 0}}
+                                        transition={{ duration: 0.8, delay: 0.2 }}>
+                                            {position}
+                                    </motion.h3>
+                                    <motion.time 
+                                        class="mt-1 block text-sm font-normal leading-none text-gray-500"
+                                        initial={{opacity: 0, x: 20}}
+                                        whileInView={{opacity: 1, x: 0}}
+                                        transition={{ duration: 0.8, delay: 0.2 }}>
+                                        {date}
+                                    </motion.time>
+                                </div>
+                            </div>
+                           
                             <motion.ul 
                                 class="text-sm lg:text-base font-normal text-gray-400 mt-3 list-disc list-inside bg-slate-900 p-8 rounded-xl ring-1 ring-inset ring-slate-700"
-                                initial={{opacity: 0, y: -50}}
-                                whileInView={{opacity: 1, y: 0}}
+                                initial={{opacity: 0, x: 50}}
+                                whileInView={{opacity: 1, x: 0}}
                                 transition={{ duration: 0.8, delay: 0.5 }}>
                                 {exp.map((item) => (
                                     <li className='mb-3'>{item}</li>

@@ -17,10 +17,10 @@ const App = () => {
         <About />
         <Timeline />
         <Skill />
-        <Work />
-        <Contact />
+        {/* <Work /> */}
+        {/* <Contact /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

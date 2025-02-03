@@ -1,30 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { motion } from 'framer-motion'
 
 const SkillCard = ({
     imgSrc,
-    label,
-    desc,
-    classes
+    effect
 }) => {
   return (
-    <div className={'flex items-center cursor-pointer gap-3 ring-2 ring-inset ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-800 transition-colors group ' + classes}>
-        <figure className='bg-zinc-700/50 rounded-lg overflow-hidden w-12 h-12 p-2 group-hover:bg-zinc-900 transition-colors'>
-            <img src={imgSrc} width={32} height={32} alt={label} />
-        </figure>
-        <div>
-            <h3>{label}</h3>
-            <p className='text-zinc-400 text-sm'>{desc}</p>
-        </div>
-    </div>
+    <motion.div 
+      className={'flex justify-center cursor-pointer gap-3 bg-slate-800 rounded-xl p-6 ring-1 ring-slate-700 transition duration-700 ease-in-out ' + effect}
+      initial={{ opacity: 0 }} 
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }} // Ensures animation only triggers once when in view
+      transition={{ duration: 0.5 }}
+    >
+      <img src={imgSrc} className='w-10 h-10 img-glow' />
+    </motion.div>
   )
 }
 
-SkillCard.PropTypes = {
+SkillCard.propTypes = {
     imgSrc: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-    classes: PropTypes.string
+    effect: PropTypes.string
 }
 
 export default SkillCard
