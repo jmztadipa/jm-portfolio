@@ -4,8 +4,8 @@ import Marquee from "react-fast-marquee";
 
 const aboutItems = [
   {
-    label: 'Projects Made',
-    number: 6
+    label: 'Projects Developed',
+    number: 8
   },
   {
     label: 'Years Of Experience',
@@ -51,25 +51,25 @@ const About = () => {
             About Me
           </motion.p>
           <motion.p 
-            className='text-base md:text-lg text-gray-400 mb-12'
+            className='text-base md:text-lg text-gray-400 mb-7'
             initial={{opacity: 0, x: -100,}}
             whileInView={{opacity: 1, x: 0}}
-            transition={{ duration: 0.5, delay: 0.2 }}>
+            transition={{ duration: 0.5, delay: 0.3 }}>
             I'm a Software Developer specializing in business system integration for efficiency and scalability. Skilled in full-cycle development, optimizing performance, and ensuring seamless connectivity. Strong communicator, providing technical updates and training. Committed to delivering secure, scalable, and well-integrated solutions aligned with business needs.
           </motion.p>
 
-          <div className='flex flex-wrap items-center gap-4 md:gap-7'>
+          <div className='flex flex-wrap items-center '>
             {
               aboutItems.map(({ label, number }, key) => (
                 <motion.div 
                   initial={{opacity: 0, y: 50,}}
                   whileInView={{opacity: 1, y: 0}}
-                  transition={{ duration: 0.5, delay: 0.3 }}> 
+                  transition={{ duration: 0.5, delay: 0.4 }}> 
                   <div className='flex items-center mb-2'>
                     <span className='text-4xl font-semibold'>{number}</span>
                     <span className='text-sky-400 font-semibold text-3xl'>+</span>
                   </div>
-                  <p className='text-sm text-zinc-400'>{label}</p>
+                  <p className='text-sm text-zinc-400 max-w-[15ch]'>{label}</p>
                 </motion.div>
               ))
             }
@@ -77,11 +77,18 @@ const About = () => {
         </div>
 
         {/* CARDS */}
+        <motion.p 
+            className='text-white text-3xl font-bold mt-15'
+            initial={{opacity: 0, x: -100,}}
+            whileInView={{opacity: 1, x: 0}}
+            transition={{ duration: 0.5, delay: 0.6 }}>
+            Key Strengths
+        </motion.p>
         <motion.div 
-          className='mt-15 lg:mt-20'
+          className='mt-10'
           initial={{opacity: 0,}}
           whileInView={{opacity: 1,}}
-          transition={{ duration: 0.5, delay: 0.3 }}>
+          transition={{ duration: 0.5, delay: 0.7 }}>
           <Marquee
             speed={100}
             pauseOnClick>

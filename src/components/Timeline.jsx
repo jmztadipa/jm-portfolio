@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 
 const experiences = [
     {
+        image: '/jm-portfolio/images/sbc_logo.png',
         position: 'Software Developer',
         date: 'May 2024 - Present',
         exp: [
@@ -16,6 +17,7 @@ const experiences = [
         ]
     },
     {
+        image: '/jm-portfolio/images/sbc_logo.png',
         position: 'Junior Developer 2',
         date: 'September 2023 - May 2024',
         exp: [
@@ -25,11 +27,21 @@ const experiences = [
         ]
     },
     {
+        image: '/jm-portfolio/images/sbc_logo.png',
         position: 'Junior Developer',
         date: 'April 2023 - September 2023',
         exp: [
             'Practiced and implemented OOP principles, applied best practices for RESTful API integration, and gained experience working with the Blazor framework.',
             'Assisted with code review processes, improving understanding of industry standards and clean coding practices under the guidance of experienced developers'
+        ]
+    },
+    {
+        image: '',
+        "position": "Freelance Web Developer",
+        "date": "2022 - 2023",
+        "exp": [
+            "Developed a software for a construction company, enhancing its online presence and accessibility, with integrated purchasing and inventory management features.",
+            "Built a simple e-commerce store, implementing essential features like product listings, shopping cart functionality, and checkout process."
         ]
     }
 ]
@@ -68,13 +80,15 @@ const Timeline = () => {
                             </motion.span>
 
                             <div className='flex items-center mb-5'>
-                                <motion.img 
-                                    className='w-10 h-9 mr-3'
-                                    initial={{opacity: 0, y: -20}}
-                                    whileInView={{opacity: 1, y: 0}}
-                                    transition={{ duration: 0.7, delay: 0.2 }}
-                                    src='/jm-portfolio/images/sbc_logo.png'
-                                />
+                                {image && (
+                                    <motion.img 
+                                        className='w-10 h-9 mr-3'
+                                        initial={{opacity: 0, y: -20}}
+                                        whileInView={{opacity: 1, y: 0}}
+                                        transition={{ duration: 0.7, delay: 0.2 }}
+                                        src={image}
+                                    />
+                                )}
                                 <div>
                                     <motion.h3 
                                         class="text-lg font-semibold text-white"

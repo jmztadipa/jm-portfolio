@@ -15,14 +15,14 @@ const Hero = () => {
                 src='/jm-portfolio/images/avatar.gif'
                 className="w-50 rounded-full" 
                 initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
+                whileInView={{ scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
             />
 
             <motion.div 
                 className='flex items-center mb-5 text-lg sm:text-2xl'
                 initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}>
                 {/* <img src="/images/wave.gif" alt="" width={48} className='mr-2' /> */}
                 <TypeAnimation
@@ -42,7 +42,7 @@ const Hero = () => {
             <motion.h1
                 className="text-3xl md:text-5xl leading-11 sm:leading-16 font-bold text-gray-100 mb-6 max-w-[30ch]"
                 initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 >
                 Building Practical, Scalable Software with a <span className='text-blue-400'>Focus on Your Needs.</span>
@@ -51,7 +51,7 @@ const Hero = () => {
             <motion.p
                 className="text-base md:text-lg text-gray-300 mb-12 max-w-lg"
                 initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
             >
                A Software Developer with a passion for creating custom business solutions, ensuring efficiency, scalability, and seamless user experiences.
@@ -62,8 +62,8 @@ const Hero = () => {
                     href="#contact"
                     className="bg-blue-500 text-white px-8 py-3 rounded-xl font-medium text-sm md:text-base hover:bg-blue-800 transition-all duration-300"
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.8 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.7 }}
                 >
                     Contact Me
                 </motion.a>
@@ -71,19 +71,19 @@ const Hero = () => {
                 <motion.a
                     className="ring-1 ring-inset text-white px-7 py-3 rounded-xl font-medium text-sm md:text-base hover:bg-white hover:text-gray-600 transition-all duration-300 cursor-pointer"
                     initial={{ opacity: 0}}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.8 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.7 }}
                 >
                     Download CV
                 </motion.a>
             </div>
 
             <motion.img
-                className="w-9 mb-10 mb-sm-0"
-                src="/jm-portfolio/images/mouse.gif"
+                className="w-16 mb-10 mb-sm-0"
+                src="/jm-portfolio/images/mouse1.gif"
                 initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}>
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 }}>
             </motion.img>
 
         </div>
