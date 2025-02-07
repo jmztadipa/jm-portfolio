@@ -18,7 +18,7 @@ const App = () => {
         <Timeline />
         <Skill />
         {/* <Work /> */}
-        {/* <Contact /> */}
+        <Contact />
       </main>
       {/* <Footer /> */}
     </>

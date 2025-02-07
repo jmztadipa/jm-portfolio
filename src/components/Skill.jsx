@@ -8,7 +8,7 @@ const skillItem = [
       effect: 'hover:shadow-[0_20px_50px_rgba(80,_39,_213,_0.7)]'
     },
     {
-      imgSrc: 'https://devblogs.microsoft.com/aspnet/wp-content/uploads/sites/16/2019/04/BrandBlazor_nohalo_1000x.png',
+      imgSrc: 'https://seeklogo.com/images/B/blazor-logo-B6B0844B72-seeklogo.com.png',
       effect: 'hover:shadow-[0_20px_50px_rgba(80,_39,_213,_0.7)]'
     },
     {
@@ -16,7 +16,7 @@ const skillItem = [
       effect: 'hover:shadow-[0_20px_50px_rgba(80,_39,_213,_0.7)]'
     },
     {
-      imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/910px-Logo_C_sharp.svg.png',
+      imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1820px-Logo_C_sharp.svg.png',
       effect: 'hover:shadow-[0_20px_50px_rgba(80,_39,_213,_0.7)]'
     },
     {
@@ -52,7 +52,7 @@ const skillItem = [
       effect: 'hover:shadow-[0_20px_50px_rgba(27,_115,_186,_0.7)]'
     },
     {
-      imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png',
+      imgSrc: 'https://www.svgrepo.com/show/374118/tailwind.svg',
       effect: 'hover:shadow-[0_20px_50px_rgba(27,_115,_186,_0.7)]'
     },
     {
@@ -83,7 +83,7 @@ const Skill = () => {
               className='text-gray-400 mb-11 max-w-[50ch]'
               initial={{opacity: 0, x: -100,}}
               whileInView={{opacity: 1, x: 0}}
-              transition={{ duration: 0.5, delay: 0.2 }}>
+              transition={{ duration: 0.5, delay: 0.3 }}>
                This is the tools and frameworks that i am using for efficient development, integration, and optimization.
             </motion.p>
 

@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@tailwind utilities;
 
 html{
     scroll-behavior: smooth;
@@ -30,11 +29,11 @@ body{
 }
 
 .img-glow{
-    filter: drop-shadow(0 0 0.59rem #556e97);
+    filter: drop-shadow(0 0 0.75rem #4a638c);
 }
 
 .section{
-    @apply pt-10 lg:pt-28 px-5
+    @apply pt-10 lg:pt-28 px-5 overflow-hidden
 }
 
 
@@ -115,7 +114,7 @@ body{
 }
 
 .btn-primary{
-    @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400
+    @apply h-11 bg-blue-500 text-white hover:bg-blue-800 mt-5
 }
 
 .btn-outline{
@@ -126,11 +125,11 @@ body{
 
 /* TEXT FIELD */
 .label{
-    @apply block text-zinc-200 text-sm font-normal mb-2
+    @apply block text-gray-200 text-sm font-normal mb-2
 }
 
 .text-field{
-    @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2
+    @apply block outline-none w-full px-4 py-4 text-sm bg-slate-900 rounded-lg ring-1 ring-slate-700 focus:ring-blue-400 focus:ring-2
 }
 
 .text-field::placeholder{

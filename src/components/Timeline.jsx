@@ -11,7 +11,8 @@ const experiences = [
             'Assisted in the development and ongoing support of multiple client systems, helping to ensure smooth operations and address any issues that arose during deployment and post-launch.',
             'Refactored and optimized existing systems to improve maintainability and scalability, ensuring that future developers could easily understand and manage the systems.',
             'Integrated payment gateways within systems, enhancing transaction capabilities and ensuring secure payment processing for clients.',
-            'Integrated third-party APIs such as TikTok and Lazada into systems, enabling clients to leverage external platforms for improved functionality and enhanced user experience.'
+            'Integrated third-party APIs such as TikTok and Lazada into systems, enabling clients to leverage external platforms for improved functionality and enhanced user experience.',
+            'Has an experienced working with caching to improve performance and efficiency using tools like Redis.'
         ]
     },
     {
@@ -68,7 +69,7 @@ const Timeline = () => {
 
                             <div className='flex items-center mb-5'>
                                 <motion.img 
-                                    className='w-12 h-11 mr-3'
+                                    className='w-10 h-9 mr-3'
                                     initial={{opacity: 0, y: -20}}
                                     whileInView={{opacity: 1, y: 0}}
                                     transition={{ duration: 0.7, delay: 0.2 }}
