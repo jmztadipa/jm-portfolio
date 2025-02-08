@@ -48,7 +48,7 @@ const experiences = [
 
 const Timeline = () => {
   return (
-    <section id='work' className='section relative pb-5 lg:pb-35'>
+    <section id='work' className='section relative pb-5 lg:pb-22'>
         <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] bg-slate-800 -z-10"></div>
 
         <div className='container'>

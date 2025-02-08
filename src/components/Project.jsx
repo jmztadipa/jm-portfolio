@@ -3,22 +3,25 @@ import ProjectCard from './ProjectCard';
 import {motion} from 'framer-motion'
 import Tilt from 'react-parallax-tilt';
 
-const works = [
+export const works = [
     {
       imgSrc: '/jm-portfolio/images/project-1.jpg',
       title: 'Full stack music app',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       tags: ['API', 'MVC', '.NET'],
       projectLink: 'https://musify-5al0.onrender.com/'
     },
     {
       imgSrc: '/jm-portfolio/images/project-2.jpg',
       title: 'Free stock photo app',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       tags: ['API', '.NET'],
       projectLink: 'https://pixstock-official.vercel.app/'
     },
     {
       imgSrc: '/jm-portfolio/images/project-3.jpg',
       title: 'Recipe app',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       tags: ['.NET', 'API'],
       projectLink: ''
     },  
@@ -26,7 +29,7 @@ const works = [
   
 const Project = () => {
   return (
-    <section id='project' className='section relative pb-13 lg:pb-33'>
+    <section id='project' className='section relative pb-13 lg:pb-41'>
 
     <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] -z-10 bg-slate-800"></div>
 

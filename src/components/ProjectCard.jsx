@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 const ProjectCard = ({
     imgSrc,
@@ -38,7 +39,7 @@ const ProjectCard = ({
                 <span className='material-symbols-rounded' aria-hidden='true'>arrow_outward</span>
             </div>
         </div>
-        <a href={projectLink} target='_blank' className='aboslute inset-0 '></a>
+        <Link to={`/jm-portfolio/project/${encodeURIComponent(title)}`} className="absolute inset-0"></Link>
 
     </motion.div>
   )
