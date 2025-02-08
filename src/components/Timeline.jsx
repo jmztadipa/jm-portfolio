@@ -108,12 +108,17 @@ const Timeline = () => {
                             </div>
                            
                             <motion.ul 
-                                class="text-sm lg:text-base font-normal text-gray-400 mt-3 list-disc list-inside bg-slate-900 p-8 rounded-xl ring-1 ring-inset ring-slate-700"
+                                class="text-sm lg:text-base font-normal text-gray-400 mt-3 list-disc list-inside bg-slate-900 p-5 pb-3 lg:pb-6 lg:p-8 rounded-xl ring-1 ring-inset ring-slate-700"
                                 initial={{opacity: 0, x: 50}}
                                 whileInView={{opacity: 1, x: 0}}
                                 transition={{ duration: 0.8, delay: 0.5 }}>
                                 {exp.map((item) => (
-                                    <li className='mb-3'>{item}</li>
+                                    <li className='mb-4 list-none flex gap-3'>
+                                        <span>●</span>
+                                        <span>
+                                            {item}
+                                        </span>
+                                    </li>
                                 ))}
                             </motion.ul>
                         </li>

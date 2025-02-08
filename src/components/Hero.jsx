@@ -57,7 +57,7 @@ const Hero = () => {
                A Software Developer with a passion for creating custom business solutions, ensuring efficiency, scalability, and seamless user experiences.
             </motion.p>
 
-            <div className='flex mb-16 gap-5'>
+            <div className='flex mb-8 lg:mb-16 gap-5'>
                 <motion.a
                     href="#contact"
                     className="bg-blue-500 text-white px-8 py-3 rounded-xl font-medium text-sm md:text-base hover:bg-blue-800 transition-all duration-300"

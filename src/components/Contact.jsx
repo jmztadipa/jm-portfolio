@@ -13,9 +13,7 @@ const socialLinks = [
 
 const Contact = () => {
   return (
-    <section id='contact' className='section relative pb-10 lg:pb-7 lg:-mt-10'>
-
-        <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] -z-10 bg-slate-800"></div>
+    <section id='contact' className='section relative pb-10 lg:pb-7 lg:-mt-13 bg-slate-900'>
 
         <div className="container lg:grid lg:grid-cols-2 lg:gap-5 lg:-mt-10 items-center">
            
@@ -67,7 +65,7 @@ const Contact = () => {
                 <motion.div
                   className='mb-4'
                   initial={{opacity: 0, x: 100,}}
-                  whileInView={{opacity: 1, x: 0}}
+                  whileInView={{opacity: 1, x: 0}}  
                   transition={{ duration: 0.5, delay: 0.3 }}>
                     <label htmlFor="message" className='label'>Message</label>
                     <textarea name="message" id="message" placeholder="Let's connect!" required className='text-field resize-y min-h-40 max-h-100'></textarea>
@@ -75,7 +73,7 @@ const Contact = () => {
                 <motion.button 
                   initial={{opacity: 0, x: 100 }}
                   whileInView={{opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
+                  transition={{ duration: 0.5, delay: 0.35 }}
                   type='submit'
                   className='btn btn-primary max-w-full w-full justify-center'>Submit
                 </motion.button>

@@ -62,7 +62,7 @@ body{
 }
 
 .title-1{
-    @apply text-[22px] font-normal
+    @apply font-normal
 }
 
 
@@ -75,7 +75,7 @@ body{
 
 /* NAVBAR */
 .navbar{
-    @apply absolute top-full mt-2 right-0 min-w-40 p-2 rounded-lg scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-none md:visible bg-zinc-900 ring-1 ring-inset ring-zinc-600 md:bg-transparent
+    @apply absolute top-full mt-2 right-0 min-w-40 p-2 rounded-lg scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-none md:visible bg-slate-900 ring-1 ring-inset ring-slate-700 md:bg-transparent
 }
 
 .navbar.active{
@@ -83,7 +83,7 @@ body{
 }
 
 .nav-link{
-    @apply grid items-center h-9 px-6 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
+    @apply grid items-center h-9 px-3 lg:px-6 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
 }
 
 .nav-link.active{
@@ -129,7 +129,7 @@ body{
 }
 
 .text-field{
-    @apply block outline-none w-full px-4 py-4 text-sm bg-slate-900 rounded-lg ring-1 ring-slate-700 focus:ring-blue-400 focus:ring-2
+    @apply block outline-none w-full px-4 py-4 text-sm bg-slate-800 rounded-lg ring-1 ring-slate-700 focus:ring-blue-400 focus:ring-2
 }
 
 .text-field::placeholder{

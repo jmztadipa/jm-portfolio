@@ -4,12 +4,19 @@ import Marquee from "react-fast-marquee";
 
 const aboutItems = [
   {
-    label: 'Projects Developed',
-    number: 8
+    label: 'Full Stack Development',
+    title: 'yrs',
+    number: 4
   },
   {
-    label: 'Years Of Experience',
+    label: 'Professional Experience',
+    title: 'yrs',
     number: 2
+  },
+  {
+    label: 'Projects Developed',
+    title: '',
+    number: 10
   }
 ];
 
@@ -60,14 +67,15 @@ const About = () => {
 
           <div className='flex flex-wrap items-center '>
             {
-              aboutItems.map(({ label, number }, key) => (
+              aboutItems.map(({ label, title, number }, key) => (
                 <motion.div 
                   initial={{opacity: 0, y: 50,}}
                   whileInView={{opacity: 1, y: 0}}
                   transition={{ duration: 0.5, delay: 0.4 }}> 
                   <div className='flex items-center mb-2'>
                     <span className='text-4xl font-semibold'>{number}</span>
-                    <span className='text-sky-400 font-semibold text-3xl'>+</span>
+                    {title && (<span className='text-md text-gray-300 ml-1 mr-1'>{title}</span>)}
+                    <span className='text-blue-400 font-semibold text-3xl'>+</span>
                   </div>
                   <p className='text-sm text-zinc-400 max-w-[15ch]'>{label}</p>
                 </motion.div>

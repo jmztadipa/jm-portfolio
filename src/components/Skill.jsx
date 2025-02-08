@@ -63,6 +63,18 @@ const skillItem = [
       imgSrc: 'https://mudblazor.com/_content/MudBlazor.Docs/images/logo.png',
       effect: 'hover:shadow-[0_20px_50px_rgba(80,_39,_213,_0.7)]'
     },
+    {
+      imgSrc: 'https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg',
+      effect: 'hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]'
+    },
+    {
+      imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png',
+      effect: 'hover:shadow-[0_20px_50px_rgba(80,_39,_213,_0.7)]'
+    },
+    {
+      imgSrc: 'https://www.sublimehq.com/images/sublime_text.png',
+      effect: 'hover:shadow-[0_20px_50px_rgba(255,_152,_0,_0.7)]'
+    },
   ];
 
 const Skill = () => {
