@@ -77,7 +77,7 @@ const About = () => {
                     {title && (<span className='text-md text-gray-300 ml-1 mr-1'>{title}</span>)}
                     <span className='text-blue-400 font-semibold text-3xl'>+</span>
                   </div>
-                  <p className='text-sm text-zinc-400 max-w-[15ch]'>{label}</p>
+                  <p className='text-sm text-zinc-400 max-w-[13ch]'>{label}</p>
                 </motion.div>
               ))
             }

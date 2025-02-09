@@ -7,10 +7,10 @@ const experiences = [
         position: 'Software Developer',
         date: 'May 2024 - Present',
         exp: [
-            'Has an experienced with leading a team of developers in planning and implementing various systems, ensuring that all phases of the development lifecycle were thoroughly discussed and executed.',
-            'Has an experienced with leadership training and actively applied the principles within my department to foster a collaborative and productive environment, supporting both team growth and project success.',
-            'Assisted in the development and ongoing support of multiple client systems, helping to ensure smooth operations and address any issues that arose during deployment and post-launch.',
-            'Refactored and optimized existing systems to improve maintainability and scalability, ensuring that future developers could easily understand and manage the systems.',
+            'Experienced in leading a development team through planning and implementing systems, ensuring thorough execution of all lifecycle phases.',
+            'Experienced in leadership training, applying its principles to foster collaboration, team growth, and project success.',
+            'Assisted in developing and supporting multiple client systems, ensuring smooth operations and issue resolution post-launch.',
+            'Refactored and optimized systems for maintainability and scalability, ensuring ease of future development.',
             'Integrated payment gateways within systems, enhancing transaction capabilities and ensuring secure payment processing for clients.',
             'Integrated third-party APIs such as TikTok and Lazada into systems, enabling clients to leverage external platforms for improved functionality and enhanced user experience.',
             'Has an experienced working with caching to improve performance and efficiency using tools like Redis.'
@@ -22,7 +22,7 @@ const experiences = [
         date: 'September 2023 - May 2024',
         exp: [
             'Developed and deployed a franchise system and managed updates based on client requirements after deployment.',
-            'Delivered timely system improvements and performed ongoing maintenance to address client requests, further tailoring the system for business-specific needs.',
+            'Delivered timely improvements and ongoing maintenance, tailoring systems to client-specific needs.',
             'Conducted deployment activities to ensure smooth integration and provided continuous support for system enhancements.'
         ]
     },
