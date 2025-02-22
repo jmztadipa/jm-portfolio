@@ -23,7 +23,7 @@ export const works = [
       title: 'Helpdesk Ticketing',
       description: 'Helpdesk Ticketing System is a real-time support platform that enables seamless communication between customers and administrators. Customers can create tickets, which are instantly received by admins through SignalR-powered real-time updates and push notifications. Both parties can engage in real-time messaging to resolve issues efficiently. Once the conversation is complete, the admin can mark the ticket as resolved, ensuring a streamlined and responsive support process.',
       tags: ['API', '.NET', 'MVC', 'BLAZOR', 'EF CORE', 'SQL SERVER', 'SIGNALR', 'PUSH NOTIFICATION'],
-      projectLink: ''
+      projectLink: 'https://www.youtube.com/watch?v=LV7ssSXiMHY'
     },  
   ];
   
