@@ -62,16 +62,21 @@ const ProjectDetails = () => {
         </div>
 
         <div>
-          <motion.video 
-            className='rounded-lg'
-            width="100%" 
-            controls 
-            loop="loop"
-            initial={{opacity: 0, x: 100,}}
-            whileInView={{opacity: 1, x: 0}}
-            transition={{ duration: 0.5, delay: 0.2 }} >
-              <source src="./Videos/video1.mp4" type="video/mp4"/>
-          </motion.video>
+        <motion.div 
+          className='rounded-lg overflow-hidden'
+          initial={{opacity: 0, x: 100,}}
+          whileInView={{opacity: 1, x: 0}}
+          transition={{ duration: 0.5, delay: 0.2 }}>
+            <iframe 
+              width="100%" 
+              height="400" 
+              src={project.projectLink.replace("watch?v=", "embed/")} 
+              title={project.title} 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen>
+            </iframe>
+        </motion.div>
         </div>
 
       </div>
