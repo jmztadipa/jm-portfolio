@@ -1,5 +1,6 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
+
 import { works } from './Project'; 
 import {motion} from 'framer-motion'
 
@@ -7,12 +8,23 @@ const ProjectDetails = () => {
   const { title } = useParams();
   const project = works.find(p => p.title === decodeURIComponent(title));
 
+  const navigate = useNavigate();
+  const handleBackToHome = () => {
+    navigate("/jm-portfolio");
+    setTimeout(() => {
+      const section = document.getElementById("project");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
+  };
+
   if (!project) {
     return <h2 className="text-white text-center mt-10">Project Not Found</h2>;
   }
 
   return (
-    <section className='section h-dvh flex lg:items-center lg:justify-center relative '>
+    <section className='section min-h-screen flex lg:items-center lg:justify-center relative '>
 
       <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] -z-9"></div>
       <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_-20%,#1D293D_40%,#03050b_100%)]"></div>
@@ -24,11 +36,9 @@ const ProjectDetails = () => {
             initial={{opacity: 0, x: -100,}}
             whileInView={{opacity: 1, x: 0}}
             transition={{ duration: 0.5, delay: 0.1 }}>
-            <Link 
-              to="/jm-portfolio"
-              className="text-blue-400 mt-4 mb-5 inline-block">
-                ← Back to Home
-            </Link>
+            <button onClick={handleBackToHome} className="text-blue-400 mt-4 mb-5 inline-block cursor-pointer">
+              ← Back to Projects
+            </button>
           </motion.div>
           
           <motion.h2 
@@ -63,7 +73,7 @@ const ProjectDetails = () => {
 
         <div>
         <motion.div 
-          className='rounded-lg overflow-hidden'
+          className='rounded-lg overflow-hidden mb-5 '
           initial={{opacity: 0, x: 100,}}
           whileInView={{opacity: 1, x: 0}}
           transition={{ duration: 0.5, delay: 0.2 }}>

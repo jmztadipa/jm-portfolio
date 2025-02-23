@@ -8,21 +8,21 @@ export const works = [
       imgSrc: '/jm-portfolio/images/StaySphere.jpg',
       title: 'StaySphere Hotel Booking',
       description: 'StaySphere Hotel Booking is an advanced hotel reservation platform designed for seamless and efficient booking experiences. It features dynamic room listings that allow hotels to manage availability in real time. The system integrates SignalR for instant updates and push notifications, ensuring users and administrators receive real-time booking and status alerts. A secure payment gateway processes transactions, with a webhook that automatically updates booking statuses upon successful payment, streamlining operations and enhancing user experience.',
-      tags: ['API', '.NET', 'MVC', 'BLAZOR', 'EF CORE', 'SQL SERVER', 'PAYMENT GATEWAY', 'SIGNALR', 'PUSH NOTIFICATION'],
+      tags: ['REST API', '.NET', 'MVC', 'BLAZOR', 'EF CORE', 'SQL SERVER', 'PAYMENT GATEWAY', 'SIGNALR', 'PUSH NOTIFICATION'],
       projectLink: 'https://www.youtube.com/watch?v=21uyv7xQcao'
     },
     {
       imgSrc: '/jm-portfolio/images/InvoiceBuilder.jpg',
       title: 'Invoice Builder',
       description: 'Invoice Builder is a streamlined invoicing solution that enables dynamic invoice creation for customers. Once an invoice is generated, the user receives it instantly. The system integrates a secure payment gateway, allowing customers to complete transactions seamlessly. Upon successful payment, a webhook is triggered to automatically update the invoice status in the database, ensuring accurate record-keeping and operational efficiency.',
-      tags: ['API', '.NET', 'MVC', 'BLAZOR', 'EF CORE', 'SQL SERVER', 'PAYMENT GATEWAY', 'PUSH NOTIFICATION'],
+      tags: ['REST API', '.NET', 'MVC', 'BLAZOR', 'EF CORE', 'SQL SERVER', 'PAYMENT GATEWAY', 'PUSH NOTIFICATION'],
       projectLink: 'https://www.youtube.com/watch?v=fq-OTZkCzfI'
     },
     {
       imgSrc: '/jm-portfolio/images/Ticketing.jpg',
       title: 'Helpdesk Ticketing',
       description: 'Helpdesk Ticketing System is a real-time support platform that enables seamless communication between customers and administrators. Customers can create tickets, which are instantly received by admins through SignalR-powered real-time updates and push notifications. Both parties can engage in real-time messaging to resolve issues efficiently. Once the conversation is complete, the admin can mark the ticket as resolved, ensuring a streamlined and responsive support process.',
-      tags: ['API', '.NET', 'MVC', 'BLAZOR', 'EF CORE', 'SQL SERVER', 'SIGNALR', 'PUSH NOTIFICATION'],
+      tags: ['REST API', '.NET', 'MVC', 'BLAZOR', 'EF CORE', 'SQL SERVER', 'SIGNALR', 'PUSH NOTIFICATION'],
       projectLink: 'https://www.youtube.com/watch?v=LV7ssSXiMHY'
     },  
   ];
