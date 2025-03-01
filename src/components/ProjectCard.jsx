@@ -26,7 +26,7 @@ const ProjectCard = ({
                 <h3 className='title-1 mb-3 text-xl'>{title}</h3>
                 <div className='flex flex-wrap items-center gap-2'>
                     {
-                        tags.slice(0, 2).map((label, key) => (
+                        tags.slice(0, 3).map((label, key) => (
                             <span key={key} className='h-8 text-sm text-gray-400 bg-zinc-50/5 grid items-center px-3 rounded-lg ring-1 ring-inset ring-slate-700'>
                                 {label}
                             </span>
