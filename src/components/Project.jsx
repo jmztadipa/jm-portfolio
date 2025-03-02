@@ -46,7 +46,47 @@ export const works = [
 `,
       tags: ["REST API", ".NET", "BLAZOR", "MVC", "EF CORE", "SQL SERVER"],
       projectLink: "https://www.youtube.com/watch?v=OMGNH4v0JdY"
-    }
+    },
+    {
+      imgSrc: '/jm-portfolio/images/HRIS.jpg',
+      title: 'Human Resource Information System',
+      description: `  
+• Employee Management  
+  - Stores detailed personal information (name, contact details, emergency contacts, etc.).
+  - Manages employment details (position, department, salary, date of hire, contract type, etc.).
+  - Provides employee status tracking (active, resigned, terminated, on probation).
+  
+• Department Management 
+    - Add and track departments.
+
+• Attendance Tracking
+    - Clock In/Out with camera validation for authentication.
+    - Real-time tracking of employee attendance records.
+    - Late and early clock-in/out detection with automatic overtime calculation.
+    - Attendance reports for monitoring trends and compliance.
+    - Integration with payroll to auto-compute attendance-based salary components.
+
+• Leave Management
+    - Tracks different leave types (vacation, sick leave, emergency leave, etc.).
+    - Allows leave requests and approvals with designated approvers.
+    - Displays a leave calendar for managers and employees to track leave schedules.
+    - Provides leave balance tracking per employee.
+    
+• Payroll System
+    -  Auto-compute attendance, overtime, deductions, gross pay, and net pay.
+    -  Support different deductions (e.g., taxes, loans, benefits).
+    -  Generate payslips that can be sent via email and downloaded.
+    -  Provide a payroll history/log for employee reference.
+
+• Remedial Action/Memo
+    -  Create memos for employees regarding disciplinary actions, warnings, or general notices.
+    -  Assign signatories for employee acknowledgment.
+    -  Track memo status (e.g., pending acknowledgment, acknowledged).
+    -  Store memos in the employee’s record/history for future reference.
+`,
+      tags: ['REST API', '.NET', 'BLAZOR', 'MVC', 'EF CORE', 'SQL SERVER', 'SIGNALR', 'PUSH NOTIFICATION'],
+      projectLink: 'https://www.youtube.com/watch?v=p24zGunQdOY'
+    },  
   ];
   
 const Project = () => {
