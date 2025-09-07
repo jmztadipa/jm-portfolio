@@ -69,6 +69,8 @@ const Hero = () => {
                 </motion.a>
 
                 <motion.a
+                    href="/files/JohnMichaelTadipa.pdf"
+                    target="_blank"
                     className="ring-1 ring-inset text-white px-7 py-3 rounded-xl font-medium text-sm md:text-base hover:bg-white hover:text-gray-600 transition-all duration-300 cursor-pointer"
                     initial={{ opacity: 0}}
                     whileInView={{ opacity: 1 }}

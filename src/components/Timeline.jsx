@@ -3,9 +3,19 @@ import {motion} from 'framer-motion'
 
 const experiences = [
     {
+        image: '/jm-portfolio/images/rcc1.jpg',
+        position: 'Mid Developer 2',
+        date: 'March 2025 - Present',
+        exp: [
+            'Developed and deployed a software solution to digitalize the coal process, including dynamic computations, hardware integrations, and a custom middleware for seamless data exchange.',
+            'Developed a bank-issued financial software solution that automates transaction validation, ensures compliance, and streamlines secure settlements.',
+            'Developed and deployed an inhouse management system that enables teams to track issues collaboratively, automate resolution workflows, and monitor progress in real time, resulting in improved efficiency, transparency, and accountability.'
+        ]
+    },
+    {
         image: '/jm-portfolio/images/sbc_logo.png',
         position: 'Software Developer',
-        date: 'May 2024 - Present',
+        date: 'May 2024 - March 2025',
         exp: [
             'Experienced in leading a development team through planning and implementing systems, ensuring thorough execution of all lifecycle phases.',
             'Experienced in leadership training, applying its principles to foster collaboration, team growth, and project success.',
@@ -82,7 +92,7 @@ const Timeline = () => {
                             <div className='flex items-center mb-5'>
                                 {image && (
                                     <motion.img 
-                                        className='w-10 h-9 mr-3'
+                                        className='w-13 h-11 mr-3 rounded'
                                         initial={{opacity: 0, y: -20}}
                                         whileInView={{opacity: 1, y: 0}}
                                         transition={{ duration: 0.7, delay: 0.2 }}
